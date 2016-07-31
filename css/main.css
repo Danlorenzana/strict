@@ -1,0 +1,383 @@
+* {
+	font-family: 'Lato', sans-serif;
+}
+body {
+	margin:0;
+}
+nav { /* nav is a block item and covers width*/
+	background-color: #F6F9F9;
+	padding:25px 100px;
+}
+.cta { /* short for call to action*/
+	text-align: center;
+	background-image: url(../img/bg1.png); /* set img as bg to a section */
+	height: 800px;
+}
+.cta h1 {
+    color: #ffffff;
+    font-size: 120px; /* Massive size */
+    font-weight: 700; /* bolder, almost black */
+    line-height: 47px; /* leading, to determine separation to line below */
+    text-align: center; /* repeat? */
+    margin-top: 0;
+    padding-top: 225px; /* to make text float, separation from top of section */
+    margin-bottom: 60px; /* affects separation to line as well*/
+}
+.cta hr { /* the hard line is shortened, centered and blue */ 
+	border-color: #15a4fa;
+	width: 50%;
+	margin-left: 25%;
+}
+.cta p {
+	color:  #ffffff;
+	font-size: 20px; 
+	font-weight: 400; /* medium bold */
+	line-height: 47px; /* guarantees space will be same when stacking objects */ 
+	text-align: center; /* repeat? */
+} 
+.cta button {
+	background-color: transparent; /* button can be transparent */
+	border-right: transparent; 
+	border-bottom: transparent; /* if not included, grey border will still show on these two sides */
+	border-top: 1px solid #15a4fa;
+	border-left: 1px solid #15a4fa; /* make two borders blue*/
+	border-radius: 2px; /* rounded corners */
+	padding: 10px 15px;
+	color: #fff;
+	cursor: pointer; /* cursor, changes the cursor upon hover.. in this case is used to mimic hover over active link */
+
+}
+.cta a {
+	position: relative;
+	top:100px;
+	color: #fff;
+}
+/* info section */  /* good to separate code by section with comments */
+.info {
+	background-color: #F6F9F9;
+	padding:50px;
+	text-align: center;
+}
+.info h2 {
+	color:  #2d3950;
+	font-size: 40px;
+	font-weight: 400;
+}
+.info p {
+	width: 74%;
+	margin: 0 auto;
+	color: #999999;
+	font-weight: 400;
+	line-height: 32px; /* leading */
+}
+
+/* features section */
+.features {
+	padding-left: 13%;
+}
+.features .box {
+	display: inline-block;
+    width: 25%;
+    top: 20px;
+    padding:10px;
+    text-align: center;
+    margin: 5% 1%;
+    font-weight: 400;
+}
+.features .iconBox{ /* create a box with gradient */
+	background: linear-gradient(to right,  #1e5799 0%,#207cca 50%,#2989d8 50%,#7db9e8 100%);
+	/* needs a direction and at least 2 color values*/
+	width: 100px;
+	height: 100px; 
+	margin: 0 auto;
+}
+.iconBox i {
+	display: block;
+	width: 100%; /* 100% centers the item to box... +/- moves left/right  */
+	text-align: center;
+	padding-top: 25px;
+	color: #fff;
+	font-size: 40px;
+}
+.fa-mobile {
+	font-size: 55px;
+}	
+.fa-paper-plane-o {
+	padding-top: 30px;
+}
+.fa-bullhorn {  /* optical sizing to match set? */
+	font-size: 50px;
+}
+.box h4 {
+	color:  #2d3950;
+	font-size: 22px;
+	margin-bottom: 3%;
+}
+.box p {
+	color:  #999999;
+	font-size: 15px; 
+	font-weight: 400;
+	line-height: 22px; 
+}
+
+/* work section */
+.work {
+	background-color: #f6f9f9;
+	text-align: center;
+	font-weight: 400;
+    padding: 50px 0;
+}
+.work h2 {
+	color:  #2d3950;
+	font-size: 41px; 
+	margin:0;
+}
+.work p {
+	color:  #909090;
+	font-size: 15px; 
+	line-height: 23px; 
+}
+.work .box {
+	display: inline-block;
+    width: 25%; /* guarantee 4 items per line */
+    padding: 0px;
+    text-align: center; /* what's the use for this? */
+    margin: 5% 1% 0%;
+    font-weight: 400; /* there's no text here */
+}
+.work img {
+	background-color: red; /* red? vivid color show broken img links, and the alt would show text centered */
+	width:100%;
+	height: 100%;
+}
+
+/* contact section */
+.contact {
+	background-image: url(../img/bg2.png); /* bg img for this section */
+	height: 500px;
+	background-position: 50%;
+	padding: 100px;
+	text-align: center;
+}
+.contact h2 {
+	color:  #ffffff;
+	font-size: 41px; 
+	font-weight: 400;
+	margin:7% 0 0;
+}
+.contact p {
+	color: #999999;
+	font-size: 15px; 
+	font-weight: 400;
+	line-height: 23px;
+}
+form > input, /* why the ">" greater symbol in css? */
+form > textarea {
+	margin: 1% auto;
+	display: block; /* block to stack elements */
+	width:30%; /* makes boxes 1/3 size of window/ screen */
+	background-color: transparent; /* clear input box */
+	padding: 10px;
+	font-size: 16px; /* size of type being entered */
+	border-radius: 2px; 
+	border: 1px solid #f6f9f9;
+	color: #fff; /* color of type being input */
+}
+form textarea {
+	margin: 0 auto;
+}
+form div {
+	width: 40%; /* overshoot the values of input box to better center? */
+	margin: 0 auto;
+}
+form div span {
+	position: relative; 
+	right: 40px; /* Space between button */
+	top: 25px;
+	color:  #fff;
+	font-size: 16px;
+	font-weight: 400;
+}
+form div input {
+	border-radius: 25%;  /* by entering input type "checkbox, a checkbox is created? */
+}
+form div button {
+	position: relative;
+	left: 35px;
+	top: 25px;
+	background-color: transparent;
+	border: 1px solid #15a4fa;
+	border-radius: 2px;
+	padding: 10px 25px;
+	color: #fff;
+	cursor: pointer;
+}
+
+/* footer */
+footer {
+	background-color: #F6F9F9;
+    padding: 10px;
+    height: 50px;
+    padding-left:50px;
+}
+footer p {
+	display: inline-block; /* to place items on same line */
+	float: left;
+	position: relative;
+	left: 75px;
+}
+.socialMedia {
+	display: inline-block; /* line up side to side */
+	float: right; /* place on right side of footer */
+	position: relative;
+	right: 200px;
+	top: 17px;
+}
+.socialMedia a {
+	border-radius: 2px;
+	background-color:  #15a4fa;
+	padding: 7px;
+	color: white;
+	text-decoration: none;
+	margin: 5px;
+}
+.socialMedia a:first-child { /* edit to first item of kind */
+	padding: 7px 9px;
+}
+
+@media (max-width: 1194px) {
+	form > input, /* why the ">" greater symbol in css? */
+	form > textarea {
+		width: 35%;
+	}
+	.box p {
+	width: 70%;
+	margin: 0 auto;
+	}
+}
+@media (max-width: 1169px) {
+	.box h4 {
+		font-size: 17px;
+	}
+	.box p {
+		font-size: 14px;
+	}
+}
+@media (max-width: 1100px) {
+	form > input, /* why the ">" greater symbol in css? */
+	form > textarea {
+		width: 40%;
+	}
+	.cta { /* short for call to action*/
+	height: 750px;
+	background-size: cover;
+	}
+}
+@media (max-width: 1069px) {
+	.box p {
+		width: 95%; 
+	}
+}
+@media (max-width: 1000px) {
+	form > input, /* why the ">" greater symbol in css? */
+	form > textarea {
+		width: 45%;
+	}
+	.cta { /* short for call to action*/
+	height: 700px;
+	}
+}
+@media (max-width: 862px) {
+	form > input, /* why the ">" greater symbol in css? */
+	form > textarea {
+		width: 55%;
+	}
+	.cta { /* short for call to action*/
+		height: 580px;
+	}
+	.cta a { 
+		top:60px;
+	}
+	.contact form div button {
+		margin: 15px;
+	}
+	.socialMedia {
+		display: none;
+	}
+}
+
+@media (max-width: 800px) {
+	form > input, /* why the ">" greater symbol in css? */
+	form > textarea {
+		width: 70%;
+	}
+	.contact form div {
+		width: 80%;
+	}
+}
+@media (max-width: 650px) {
+	form > input, /* why the ">" greater symbol in css? */
+	form > textarea {
+		width: 90%;
+	}
+	.cta h1 {
+		font-size: 100px;
+	}
+	.cta p {
+	font-size: 16px; 
+	line-height: 40px; /* guarantees space will be same when stacking objects */ 
+	margin: 0 auto;
+	width: 85%;
+	text-align: center;
+	} 
+	.info p {
+	width: 100%;
+	}
+	.work .box {
+	display: inline-block;
+    width: 35%; /* guarantee 4 items per line */
+    padding: 0px;
+    text-align: center; /* what's the use for this? */
+    margin: 5% 1% 0%;
+    font-weight: 400; /* there's no text here */
+	}
+	.work h2 {
+		width: 75%;
+		margin: 0 auto;
+	}
+}
+@media (max-width: 500px) {
+	form > input, /* why the ">" greater symbol in css? */
+	form > textarea {
+		width: 100%;
+	}
+	.cta { /* short for call to action*/
+		height: 500px;
+	}
+	.cta h1 {
+		font-size: 85px;
+		padding-top: 165px;
+	}
+	.features {
+		display: none;
+	}
+	.work h2 {
+		font-size: 35px;
+	}
+}
+@media (max-width: 350px) {
+	.work .box {
+	display: inline-block;
+    width: 90%; /* guarantee 4 items per line */
+    padding: 0px;
+    text-align: center; /* what's the use for this? */
+    margin: 5% 1% 0%;
+    font-weight: 400; /* there's no text here */
+	}
+	.contact {
+		padding: 50px;
+	}
+	footer p {
+		left: 30px;
+	}
+}
